@@ -146,6 +146,7 @@ services:
 
   web2:
     labels:
+      shipyard.route: '/'
       shipyard.liveness.http.path: '/health'
       shipyard.liveness.initial_delay: '15'
       shipyard.liveness.period: '15'
